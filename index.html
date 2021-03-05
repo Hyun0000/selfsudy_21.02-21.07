@@ -5,8 +5,18 @@
     <meta charset="utf-8">
     <style>
     a {
-      color:red; text-decoration: none;
+      color:black;
+      text-decoration: none;
     }
+  h1 {
+font-size: 50px; text-align:center;
+  }
+  #active{
+    color:red;
+  }
+  .saw {
+    color:gray;
+  }
     </style>
     </head>
   <body>
@@ -15,11 +25,11 @@
   <a href="https://movie.naver.com/" target="_blank" title="넷플릭스">여기에</h1></a>
   <img src="main.jpg" width="800" height="500" alt="5taKu">
   <ul style="list-style: none">
-      <p><li><input type="checkbox"> <a href="https://serieson.naver.com/movie/detail.nhn?viewSeq=427035&prodNo=5975975&isWebtoonAgreePopUp=true" target="-_blank">  1.한국</li></p></a>
-      <p><li><input type="checkbox"> <a href="https://serieson.naver.com/movie/home.nhn" target="-_blank" style="color:blue;text-decoration:underline">  2.일본</li></p></a>
-      <p><li><input type="checkbox"> <a href="https://serieson.naver.com/movie/detail.nhn?viewSeq=426058&prodNo=5962389&isWebtoonAgreePopUp=true" target="-_blank">  3.미국</li></p></a>
-      <p><li><input type="checkbox"> <a href="https://serieson.naver.com/movie/detail.nhn?viewSeq=410954&prodNo=5751044&isWebtoonAgreePopUp=true" target="-_blank">  4.프랑스</li></p></a>
-      <p><li><input type="checkbox"> <a href="https://serieson.naver.com/movie/detail.nhn?viewSeq=427816&prodNo=5991484&isWebtoonAgreePopUp=true" target="-_blank">  5.그외</li></p></a>
+    <p><li><input type="checkbox"> <a href="https://serieson.naver.com/movie" target="-_blank" class="saw">  1.한국</li></p></a>
+    <p><li><input type="checkbox"> <a href="https://serieson.naver.com/movie" target="_blank">  2.일본</li></p></a>
+    <p><li><input type="checkbox"> <a href="https://serieson.naver.com/movie" target="-_blank" class="saw" id="active">  3.미국</li></p></a>
+    <p><li><input type="checkbox"> <a href="https://serieson.naver.com/movie" target="-_blank">  4.프랑스</li></p></a>
+    <p><li><input type="checkbox"> <a href="https://serieson.naver.com/movie" target="-_blank">  5.그외</li></p></a>
   </ul>
 
 <!--
