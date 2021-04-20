@@ -24,9 +24,9 @@ body {
 }
 
 .modal{
-  margin-top : 20px;
   padding : 20px;
   background : #eee;
+  margin: 20px 20px;
 }
 
 .App-logo {
