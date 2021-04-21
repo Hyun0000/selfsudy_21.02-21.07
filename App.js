@@ -15,6 +15,16 @@ function App() {
   let [모달, 모달변경] = useState(false);
   let [모달토글, 모달토글변경] = useState(false);
 
+  function a() {
+    모달토글변경(true);
+    모달변경(true);
+  }
+
+  function b() {
+    모달토글변경(false);
+    모달변경(false);
+  }
+
   // function 순서바꾸기() {
   //   let number = [...글제목];
   //   number.sort();
@@ -41,25 +51,13 @@ function App() {
 
       <div className="list">
         <h3 onClick={() => {
-          모달토글 === false
-            ? {
-              모달변경(true);
-              모달토글변경(true);
-            }
-            : {
-              모달변경(false);
-              모달토글변경(false);
-            }
+          모달토글 == false
+            ? a()
+            : b()
         }}>{글제목[2]}</h3>
         <p>2월 17일 발행</p>
         <hr />
       </div>
-
-      {/* <div className="list">
-        <h3 onClick={() => { 모달변경(true) }}>{글제목[2]}</h3>
-        <p>2월 17일 발행</p>
-        <hr />
-      </div> */}
 
       {
         모달 === true
