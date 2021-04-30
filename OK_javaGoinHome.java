@@ -15,7 +15,6 @@ public class OK_javaGoinHome {
 		// 내가 위로 올라갈 것이기에 엘리베이터를 1층으로 호출하는 것
 		// 해석 : 우리집으로 올라가기 위해 엘리베이터를 1층으로 보내라고 엘리베이터한테 명령하는 것
 		
-		
 		// Security off
 		Security mySecurity = new Security(id);
 		mySecurity.off();
