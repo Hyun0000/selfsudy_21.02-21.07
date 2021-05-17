@@ -3,14 +3,19 @@ public class exceptionappfirst {
 		System.out.println(1);
 		int[] scores = {10, 20, 30};
 		System.out.println(scores[0]);
-		try {
-		System.out.println(scores[3]);
-		System.out.println(2/0);
+		try{
+			System.out.println(2);
+			System.out.println(scores[3]);
+			System.out.println(3);
+			System.out.println(2/0);
+			System.out.println(4);
 		} catch(ArithmeticException e) {
-			System.out.println("잘못된 계산이네요");
-		} catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println("없는 값을 왜 찾아요");
+			System.out.println("계산이 잘 못 됐네요"+e.getMessage());
 		}
+		  catch(Exception e) {
+			System.out.println("코드가 뻥 터졌네요");
+		}
+		System.out.println(5);
 		// catch --> try안에 있는 코드를 실행했을 때
 		// ArithmeticException이 발생하면 {중괄호}안에 있는
 		// System.out.println("잘못된 계산이네요") 코드가 실행되게 해주세여
