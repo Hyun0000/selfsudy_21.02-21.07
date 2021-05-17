@@ -5,12 +5,13 @@ public class exceptionappfirst {
 		System.out.println(scores[0]);
 		try{
 			System.out.println(2);
-			System.out.println(scores[3]);
+//			System.out.println(scores[3]);
 			System.out.println(3);
 			System.out.println(2/0);
 			System.out.println(4);
 		} catch(ArithmeticException e) {
 			System.out.println("계산이 잘 못 됐네요"+e.getMessage());
+//			e.printStackTrace();
 		}
 		  catch(Exception e) {
 			System.out.println("코드가 뻥 터졌네요");
