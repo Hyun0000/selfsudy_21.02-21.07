@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2. alert by onclick.css">
+</head>
+<body>
+    <div class="alert-box" id="alert">Alert 박스</div>
+  
+    <button onclick="alertopen()">버튼</button>
+
+    <button onclick="alertclose()">닫기</button>
+
+    <script>
+        function alertopen() {
+            document.getElementById('alert').style.display = 'block';
+        }
+
+        function alertclose() {
+            document.getElementById('alert').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
